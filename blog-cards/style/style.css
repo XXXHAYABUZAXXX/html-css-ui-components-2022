@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f8fc;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@media (max-width: 940px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.container .card {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.container .card-header img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.container .card-body .tag {
+  background: #777;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 10px;
+  text-transform: uppercase;
+}
+
+.container .card-body h4 {
+  margin: 10px 0;
+}
+
+.container .card-body p {
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+.container .card-body .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
+.container .card-body .user img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container .card-body .user-info h5 {
+  margin: 0;
+}
+
+.container .card-body .user-info small {
+  color: #888785;
+}
+
+.container .card-body .tag-teal {
+  background-color: #92d4e4;
+}
+
+.container .card-body .tag-purple {
+  background-color: #3d1d94;
+}
+
+.container .card-body .tag-pink {
+  background-color: #c62bcb;
+}
+/*# sourceMappingURL=style.css.map */
