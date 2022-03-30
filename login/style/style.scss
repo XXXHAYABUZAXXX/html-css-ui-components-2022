@@ -4,10 +4,114 @@
 
 body {
   background-color: #f7f8fc;
+  color: #141c2c;
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: #2762eb;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  background: #fff;
+  border-radius: 3px;
+  border: 20px solid #dce7ff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  max-width: 100%;
+
+  form {
+    display: flex;
+    border-right: 1px solid #ecf2ff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    flex: 1;
+
+    button {
+      background: #141c2c;
+      border: 2px solid #141c2c;
+      border-radius: 3px;
+      color: #fff;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 10px;
+      margin: 20px 0;
+      width: 100%;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+
+        img {
+          margin-right: 5px;
+          width: 20px;
+        }
+      }
+    }
+
+    .form-control {
+      margin: 10px 0;
+      width: 100%;
+
+      label {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+
+    input:not([type="checkbox"]) {
+      background: transparent;
+      border: 2px solid #ecf2ff;
+      border-radius: 3px;
+      font-size: 14px;
+      font-family: inherit;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .checkbox-container {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 15px;
+      width: 100%;
+
+      label {
+        color: #7a7e8c;
+        font-weight: normal;
+      }
+
+      a {
+        margin-left: auto;
+      }
+    }
+  }
+
+  .features {
+    flex: 1.5;
+  }
+}
+
+.container .btn-ghost {
+  background: transparent;
+  border-color: #ecf2ff;
+
+  a {
+    color: #141c2c;
+  }
 }
