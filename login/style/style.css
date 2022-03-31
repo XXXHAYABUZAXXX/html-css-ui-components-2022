@@ -38,6 +38,15 @@ a {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .container form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,6 +66,12 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media (max-width: 768px) {
+  .container form {
+    border-right: 0;
+  }
 }
 
 .container form button {
@@ -137,6 +152,30 @@ a {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
+  padding: 40px;
+}
+
+.container .features .feature {
+  position: relative;
+  padding-left: 30px;
+  margin: 40px;
+}
+
+.container .features .feature i {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: #2762eb;
+}
+
+.container .features .feature h3 {
+  margin: 0;
+}
+
+.container .features .feature p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 5px 0;
 }
 
 .container .btn-ghost {

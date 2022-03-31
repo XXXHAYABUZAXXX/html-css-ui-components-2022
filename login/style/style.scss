@@ -27,6 +27,11 @@ a {
   width: 1000px;
   max-width: 100%;
 
+  // ipad screen
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   form {
     display: flex;
     border-right: 1px solid #ecf2ff;
@@ -36,6 +41,11 @@ a {
     padding: 40px;
 
     flex: 1;
+
+    // ipad screen
+    @media (max-width: 768px) {
+      border-right: 0;
+    }
 
     button {
       background: #141c2c;
@@ -104,6 +114,30 @@ a {
 
   .features {
     flex: 1.5;
+    padding: 40px;
+
+    .feature {
+      position: relative;
+      padding-left: 30px;
+      margin: 40px;
+
+      i {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        color: #2762eb;
+      }
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 5px 0;
+      }
+    }
   }
 }
 
