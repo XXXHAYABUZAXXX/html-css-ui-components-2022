@@ -1,0 +1,32 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1c223b;
+  color: #e2e2e2;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background: #273349;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+          box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+  padding: 100px;
+  width: 62.5rem;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
